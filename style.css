@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #000000;
+    font-size: 62.25%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+h1{
+    color: #ddff00;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.414);
+    width: 90%;
+    height: 80%;
+    border-radius: 2.5rem;
+    -webkit-border-radius: 2.5rem;
+    -moz-border-radius: 2.5rem;
+    -ms-border-radius: 2.5rem;
+    -o-border-radius: 2.5rem;
+
+    border: 0.5rem solid #ddff00;
+    position: absolute;
+    box-shadow: 0px 0px 1rem 2px #ddff00;
+
+    /* display: flex; */
+    flex-direction: row;
+
+
+}
+
+.container::after {
+    background-color: #ddff00;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 16%;
+    width: 65%;
+    height: 3%;
+    border-radius: 0.5rem;
+
+}
+
+.iconCont{
+    width: 10%;
+    height: 100%;
+    display: flex;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: #ddff00;
+    margin-left: 1rem;
+}
+
+.clock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 7rem;
+    color: #ddff008c;
+}
+
+@media screen and (width<=1430px){
+    .container{
+        width: 95%;
+    }
+
+    .clock{
+        font-size: 4.5rem;
+    }
+    
+}
+
+@media screen and (width<=900px){
+    .container{
+        flex-direction: column;
+        height: 90%;
+    }
+
+    .iconCont{
+        display: none;
+    }
+
+
+    .clock{
+        font-size: 1.85rem;
+    }
+
+    h1{
+        color: #ddff00;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    
+}
+
+
+
